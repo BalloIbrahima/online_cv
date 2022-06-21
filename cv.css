@@ -1,49 +1,221 @@
+body{
+    height: 100vh;
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+}
 header{
     display: flex;
     flex-direction: row;
     background-color: #94a6b2;
-    height: 25%;
+    height: 30%;
+    width: 100%;
     color: black;
 }
 main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
-body{
-    width: 70%;
-    margin: auto;
-}
+    
 .photo_container{
-    width: 200px;
-    padding: auto;
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 30%;
 }
 .photo_cv{
-    background-image: url(photo_mini.JPG);
-    height: 120px;
-    width: 120px;
+    background-image: url(photo.JPG);
+    height: 160px;
+    width: 160px;
     background-size: cover;
     border-radius: 100%;
-    border-color: white;
+    border-width: 2px;
+    border: solid white;
 }
-img{
-    border-radius: 50%;
-    margin: auto;
-    object-fit: cover;
-}
+
+
 .nom_description{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    width: 70%;
 }
+
 /* //main */
+.title{
+    font-size: 19px;
+    margin-bottom: 0;
+}
+.subtittle{
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 20px;
+}
+/* left flex */
 .left_flex{
-    width: 200px;
     background-color: #353e4d;
     color: white;
+    width: 30%;
 }
-.rigth_flex{
+.left_flex_container{
+    width: 160px;
+    margin: auto;
+    margin-top: 15%;
+}
+svg{
+    margin-right: 5px;
+}
+/* rigth flex */
+.right_flex{
+    background-color:white;
     color: black;
+    width: 70%;
+    border-right: solid #94a6b2;
+    border-bottom: solid #94a6b2;
+}
+.right_flex_container{
+    margin: auto;
+    width: 90%;
+    margin-top: 3%;
+}
+.right_flex_container>section >ul{
+    list-style: none;
+}
+.label_date{
+    font-weight: bold;
+    display: flex;
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        height: 100vh;
+        font-size: 14px;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        color: black;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .photo_container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 70%;
+        margin: auto;
+    }
+    .photo_cv{
+        background-image: url(photo.JPG);
+        height: 210px;
+        width: 210px;
+    }
+    img{
+        border-radius: 50%;
+        margin: auto;
+        object-fit: cover;
+    }
+
+
+    .nom_description{
+        width: 95%;
+        margin: auto;
+    }
+    .txt_center{
+        text-align: center;
+    }
+
+    /* //main */
+    .title{
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+    .subtittle{
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        margin: auto !important;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        margin-bottom: 20px;
+    }
+    /* left flex */
+    .left_flex{
+        width: 100%;
+    }
+    .left_flex_container{
+        width: 95%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+    
+    .title{
+        grid-area: header;
+      }
+    .st_1{
+        grid-area: sous_titre1;
+    }
+    .st_2{
+        grid-area: sous_titre2;
+    }
+    .ul_1{
+        grid-area: ul1;
+    }
+    .ul_2{
+        grid-area: ul2;
+    }
+    .section2{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header  header"
+                            "sous_titre1 sous_titre2"
+                            "ul1 ul2"
+    }
+    ul{
+        margin: auto;
+    }
+   
+    /* rigth flex */
+    .right_flex{
+        width: 100%;
+    }
+    .right_flex_container{
+        width: 95%;
+        margin-top: 3%;
+    }
+    .right_flex_container>section >ul{
+        list-style: none;
+    }
+    .label_date{
+        font-weight: bold;
+        display: flex;
+    }
+        
 }

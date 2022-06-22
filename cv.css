@@ -1,14 +1,14 @@
 body{
     height: 100vh;
     font-size: 14px;
-    width: 70%;
+    width: 630px;
     margin: auto;
 }
 header{
     display: flex;
     flex-direction: row;
     background-color: #94a6b2;
-    height: 30%;
+    height: 180px;
     width: 100%;
     color: black;
 }

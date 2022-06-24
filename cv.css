@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     font-size: 14px;
-    width: 630px;
+    width: 700px;
     margin: auto;
 }
 header{
@@ -100,7 +100,7 @@ svg{
     display: flex;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     body{
         height: 100vh;
         font-size: 14px;
